@@ -1,0 +1,6 @@
+openai-whisper
+imageio[ffmpeg]
+numpy
+torch
+torchvision
+torchaudio
