@@ -1,5 +1,29 @@
 # CBU5201_miniproject_hzt
 
+DNN Method:
+
+Architecture:
+The DNN consists of a multi-layer structure made up of multiple fully connected neural units. The architecture includes hidden layers using activation functions such as ReLU (Rectified Linear Unit) to introduce non-linearity, enabling the network to learn complex patterns from input data.
+Loss Function: For classification tasks, a cross-entropy loss function is used to ensure the model can effectively distinguish between different categories.
+Training Process:
+The DNN is trained using backpropagation and mini-batch stochastic gradient descent. The optimizer used is Adam, which is suitable for deep network training as it can dynamically adjust the learning rate.
+
+BERT-ResidualModel Method:
+
+BERT Integration:
+
+BERT-ResidualModel combines the contextual embeddings of BERT with the benefits of a residual learning framework. In this experiment, speech is converted into text for subsequent text analysis.
+BERT: BERT is pre-trained on large corpora to understand the context of words, capturing complex semantic relationships. This pre-trained model provides a powerful feature extractor for natural language understanding tasks.
+Residual Connections: These connections are introduced into the BERT architecture to stabilize training and alleviate the problem of gradient vanishing, enabling the model to train deeper without losing information.
+Model Design:
+
+The model uses the transformer layers from multi-lingual BERT as a base and adds six layers of residual connections. This deep structure is crucial for reasoning and contextual understanding tasks.
+Additional task-specific output layers, such as classification heads for sentiment analysis or intent classification, are integrated on top of BERT.
+Training Process:
+
+The BERT-ResidualModel is fine-tuned on task-specific corpora, with both BERT’s weights and the residual connections being updated to enhance task performance.
+Techniques like learning rate warm-up and linear learning rate decay are used to optimize the training process.
+
 DNN 方法
 1. 架构：
   - 深度神经网络（DNN）在本实验中由多个全连接神经单元组成的多层结构构成。架构中包含隐藏层，使用激活函数如 ReLU（修正线性单元）来引入非线性，从而使网络能够从输入数据中学习复杂的模式。
