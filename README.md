@@ -1,5 +1,7 @@
 # CBU5201_miniproject_hzt
 
+He Ziteng 221166518
+
   DNN Method:
   1. Architecture:
     - The DNN consists of a multi-layer structure made up of multiple fully connected neural units. The architecture includes hidden layers using activation functions such as ReLU (Rectified Linear Unit) to introduce non-linearity, enabling the network to learn complex patterns from input data.
